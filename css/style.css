@@ -1,122 +1,133 @@
+/* soft reset do css */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
   }
-
-body {
-	
+  
+  body {
 	background-image: url('../img/fundo.jpg.jpeg');
-	background-size: auto 100vh;
+	background-size: auto 100vh; 
 	font-family: 'Nova Mono', monospace;
 	height: 100vh;
 	font-size: 12px;
-}
-
-@media(min-width:400px){
-body {
-
-	font-size: 14px;
-	}
-}
-
-@media(min-width:600px){
+  }
+  
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+  @media (min-width: 400px) {
 	body {
-	
-		font-size: 18px;
+	  font-size: 14px;
 	}
-}
-
-@media (min-width: 1200px) {
+  }
+  
+  /* breakpoint */
+  @media (min-width: 600px) {
 	body {
-		  font-size: 20px;
-		}
-	}	
-
-
-header{
-
+	  font-size: 18px;
+	}
+  }
+  
+  /* breakpoint */
+  @media (min-width: 1200px) {
+	body {
+	  font-size: 20px;
+	}
+  }
+  
+  header {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center ;
-
-}
-
-.menu{
-
+	align-items: center;
+  }
+  
+  .menu {
 	background-color: white;
 	position: fixed;
-	width:100vw ;
-	top: 0 ;
-}
-
-.menu a{
-	display: block;
-	padding: 10px 20px;
-	
-}
-
-.menu ul {
+	width: 100vw;
+	top: 0;
+	z-index: 1;
+  }
+  
+  .menu ul {
 	display: flex;
 	justify-content: space-around;
-
-}
-
-.menu li {
-	list-style: none;
-	
-}
-
-.menu a {
+  }
   
+  .menu li {
+   list-style: none; 
+  }
+  
+  .menu a {
 	display: block;
 	padding: 10px 20px;
+	transition: background-color 1s, color 1s;
   }
-
-a {
+  
+  .menu a:active,
+  .menu a:hover {
+	background-color: teal;
+	color: white;
+  }
+  
+  a {
 	color: teal;
 	text-decoration: none;
-}
-
-a:hover {
-
+  }
+  
+  a:hover {
 	text-decoration: underline;
-}
-
-.site-subtitle,
-.site-title {
-
+  }
+  
+  .titulo {
+	transform: scale(0.2) translateY(50vh);
+	opacity: 0;
+	animation: 1s ease 2s animacaoTitulo forwards;
+  }
+  
+  @keyframes animacaoTitulo {
+	from {
+	  transform: scale(0.2) translateY(50vh);
+	  opacity: 0;
+	}
+	to {
+	  transform: scale(1) translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  .site-subtitle, 
+  .site-title {
 	color: whitesmoke;
 	text-align: center;
-	
-}
-.site-title{
+  }
+  
+  .site-title {
 	font-size: 4em;
 	font-family: 'Source Code Pro', monospace;
-	
-
-}
-.site-subtitle{
-	font-style: italic;
-	font-family: 'Source Code Pro', monospace;
-	line-height: 1.8em;
-}
-
-.portfolio{
+  }
+  
+  .site-subtitle {
+   font-style: italic;
+   font-family: 'Source Code Pro', monospace;
+   line-height: 1.8em;
+  }
+  
+  .contato,
+  .portfolio {
 	padding: 2em;
-	height: 100vh;
-}
-
-
-.portfolio h2{
-font-family: 'Source Code Pro', monospace;
-color: whitesmoke;
-margin-bottom: 1.5em;
-font-size: 2em;
-}
-
-.portfolio .grid {
+	min-height: 100vh;
+  }
+  
+  .contato h2,
+  .portfolio h2 {
+	font-family: 'Source Code Pro', monospace;
+	color: whitesmoke;
+	margin-bottom: 1.5em;
+	font-size: 2em;
+  }
+  
+  .portfolio .grid {
 	display: grid;
 	gap: 2em;
   }
@@ -140,10 +151,30 @@ font-size: 2em;
 	text-align: center;
   }
   
-.img-portfolio{
-
+  .img-portfolio {
 	height: 180px;
 	width: 240px;
 	object-fit: cover;
 	object-position: left bottom;
-}
+	transition: transform 500ms;
+  }
+  
+  .img-portfolio:hover {
+	transform: scale(1.2) rotate(-2deg);
+  }
+  
+  .contato .icons {
+	text-align: center;
+  }
+  
+  .contato a {
+	color: whitesmoke;
+	font-size: 4em;
+	transition: text-shadow 1s;
+  }
+  
+  .contato a:active,
+  .contato a:hover  {
+	text-decoration: none;
+	text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  }
