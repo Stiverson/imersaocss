@@ -14,10 +14,12 @@
 <body>
 	<header>
 		<nav class="menu">
-			<ul>
-				<li><a href="#Sobre">Sobre</a></li>
-				<li><a href="#portfolio">Projetos</a></li>
-				<li><a href="#contato">Contato</a></li>
+			<ul class="container">
+				<li>
+					<a href="#sobre" i class="fas fa-gamepad"></i> Sobre</a>
+				</li>
+				<li><a href="#portfolio" i class="fas fa-project-diagram"></i> Projetos</a></li>
+				<li><a href="#contato" i class="fas fa-id-card-alt"></i> Contato</a></li>
 			</ul>
 		</nav>
 		<div class="titulo">
@@ -25,42 +27,146 @@
 			<h2 class="site-subtitle"> Mobile, Jr. Front-end e Java Developer</h2>
 		</div>
 	</header>
-	<section class="portfolio" id="portfolio">
+	<section class="sobre container" id="sobre">
+		<h2>Sobre</h2>
+		<figure class="avatar">
+			<img src="./img/tives3 (2).jpeg" alt="Stiverson">
+		</figure>
+
+		<p>
+			Stiverson Rodrigues Machado Formado em Técnico para informática para internet
+			Graduando em Análise e desenvolvimento de sistemas.!
+		</p>
+
+		<p>
+			Residente na cidade de Piracicaba-sp,grande amante de técnologia,principalmente na área de
+			desenvolvimento,possuo conhecimento em várias linguagem de programação,html,css,javascript,
+			andorid,flutter e etc.
+		</p>
+
+		<p>
+			Amante de consoles e games cultura nerd geek e tecnologia digital .
+		</p>
+
+		<p>
+			Pai do gato mais maneiro e simpático do mundo que me proporciona novas idéias todo
+			dia, Pai do Anthony a maior riqueza do mundo que deus me pode dar e casado com a mulher mais
+			sincera e dedicada do mundo a soridente e mais amável Stefane Souza.
+		</p>
+		<p>
+			Sou uma pessoa dedicada e disposta a novos desafios busco oportunidades de demonstrar meus conhecimentos
+			adquiridos nesses anos de aprendizagem , sempre disposto a aprender e ensinar e me tornar mais capácitado
+			todos
+			os dias esse é o primeiro de muitos outros projetos que estão por vir na sessão abaixo segue os links e
+			informações de algums projetos
+			já desenvolvidos e também a área de contatos vlw pelo page view.
+		</p>
+
+		<p>
+			Este site foi construído durante a
+			<a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+			:)
+
+		</p>
+
+
+
+	</section>
+	<section class="portfolio container" id="portfolio">
 		<h2>Projetos</h2>
 
 		<div class="grid">
-			<figure>
-				<img class="img-portfolio" src="./img/mobile.png" alt=">Mobile">
-				<figcaption> <a href="https://github.com/Stiverson/flutterproject2">Mobile Flutter</a></figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/web2.jpg" alt="Web design">
-				<figcaption><a href="https://stiverson.github.io/ProjetoPronatecCanaldotives.io/">Web design </a>
-				</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/geek.jpg" alt="Projetos pessoais">
-				<figcaption><a href="https://github.com/Stiverson?tab=repositories"> Projetos pessoais</a>
-				</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/banner.jpg" alt="Barbearia do Snow">
-				<figcaption><a href="https://stiverson.github.io/BarbeariaDoSnow/">Barbearia do Snow</a></figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/imersao.jpg" alt="Imersão CSS">
-				<figcaption><a href="https://github.com/Stiverson/imersaocss">Imersão Css</a></figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/java.jpg" alt="Projeto Java ionic">
-				<figcaption><a href="https://github.com/Stiverson/spring-boot-ionic-backend">Projeto Java Ionic</a>
-				</figcaption>
-			</figure>
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/mobile.png" alt=">Mobile">
+						<figcaption> <a href="https://github.com/Stiverson/flutterproject2">Mobile Flutter</a>
+						</figcaption>
+					</figure>
+					<div class="card-back">
+						<h3>Mobile Flutter</h3>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/web2.jpg" alt="Web design">
+						<figcaption><a href="https://stiverson.github.io/ProjetoPronatecCanaldotives.io/">Web design
+							</a>
+						</figcaption>
+					</figure>
+					<div class="card-back">
+						<h3>Web design</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/geek.jpg" alt="Projetos pessoais">
+						<figcaption><a href="https://github.com/Stiverson?tab=repositories"> Projetos pessoais</a>
+						</figcaption>
+					</figure>
+					<div class="card-back">
+						<h3>Projetos pessoais</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/banner.jpg" alt="Barbearia do Snow">
+						<figcaption><a href="https://stiverson.github.io/BarbeariaDoSnow/">Barbearia do Snow</a>
+						</figcaption>
+					</figure>
+					<div class="card-back">
+						<h3>Barbearia do Snow</h3>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/imersao.jpg" alt="Imersão CSS">
+						<figcaption><a href="https://github.com/Stiverson/imersaocss">Imersão Css</a></figcaption>
+					</figure>
+					<div class="card-back">
+						<h3>Imersão CSS</h3>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/java.jpg" alt="Projeto Java ionic">
+						<figcaption><a href="https://github.com/Stiverson/spring-boot-ionic-backend">Projeto Java
+								Ionic</a>
+						</figcaption>
+					</figure>
+					<div class="card-back">
+						<h3>Projeto Java IONIC</h3>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 	</section>
 	<section class="contato" id="contato">
 		<h2>Contato</h2>
 		<div class="grid icons">
+			<a href="https://wa.me/5519982273244" target="_blank">
+				<i class="fab fa-whatsapp"></i>
+			</a>
+
 			<a target="_blank" href="https://github.com/Stiverson">
 				<i class="fab fa-github-alt"></i>
 			</a>
@@ -73,7 +179,7 @@
 			<a target="_blank" href="https://www.instagram.com/tives_stiverson/?hl=pt-br">
 				<i class="fab fa-instagram"></i>
 			</a>
-			<a target="_blank" href="stiverson.machado@gmail.com">
+			<a target="_blank" href="mailto:stiverson.machado@gmail.com">
 				<i class="fas fa-at"></i>
 			</a>
 		</div>
