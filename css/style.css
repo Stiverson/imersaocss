@@ -139,6 +139,10 @@
 	margin-bottom: 1.5em;
 	font-size: 2em;
   }
+
+.contao h2 {
+ text-align : center;
+}
   
   .sobre p {
 	color: white;
