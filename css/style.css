@@ -140,8 +140,9 @@
 	font-size: 2em;
   }
 
-.contao h2 {
+.contato h2 {
  text-align : center;
+padding: 10px 20px;
 }
   
   .sobre p {
