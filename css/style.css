@@ -140,6 +140,11 @@
 	font-size: 2em;
   }
 
+.portfolio h2{
+text-align : center;
+padding: 10px 20px;
+
+}
 .contato h2 {
  text-align : center;
 padding: 10px 20px;
