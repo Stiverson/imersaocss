@@ -74,11 +74,12 @@
   }
   
   a {
-	color: white;
+	color: teal;
 	text-decoration: none;
   }
   
   a:hover {
+	color:white;  
 	text-decoration: underline;
   }
   
